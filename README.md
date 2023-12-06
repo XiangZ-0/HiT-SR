@@ -167,14 +167,9 @@ We apply our HiT-SR approach to improve [SwinIR-Light](https://github.com/Jingyu
 
 - Convergence improvements of HiT-SR (SIR and SNG indicate SwinIR-Light and SwinIR-NG, respectively). Left two figures show the results on Urban100 (x2) dataset, and the right two are on Manga109 (x2) dataset.
 
-<div style="text-align: center;">
-  <div style="display: inline-block; margin-right: 10px;">
-    <img width="365" src="figs/convergence-comparison-Urban100.png">
-  </div>
-  <div style="display: inline-block;">
-    <img width="366" src="figs/convergence-comparison-Manga109.png">
-  </div>
-</div>
+<p align="center">
+  <img width="750" src="figs/convergence-comparison.png">
+</p>
 
 More detailed results can be found in the paper. All visual results of  can be downloaded [here](https://1drv.ms/f/s!AgjOZB4WHoLekVPr-wOvZU49ZDif?e=T207H7).
 
