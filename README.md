@@ -13,9 +13,13 @@ arXiv 2024
 
 
 <p align="center">
-  <img width="500" src="figs/framework.png">
+  <img width="600" src="figs/framework.png">
+</p>
+
+<p align="center">
   <img width="900" src="figs/HiT-SR.png">
 </p>
+
 
 <!-- ![](figs/HiT-SR.png) -->
 
