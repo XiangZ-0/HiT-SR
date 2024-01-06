@@ -1,10 +1,16 @@
-# HiT-SR: Hierarchical Transformer for Efficient Image Super-Resolution
+<p align="center">
+  <h1 align="center">HiT-SR: Hierarchical Transformer for Efficient Image Super-Resolution</h1>
+  <p align="center">
+    <a href="https://xiangz-0.github.io/">Xiang Zhang</a>
+    ·
+    <a href="http://yulunzhang.com/">Yulun Zhang</a>
+    ·
+    <a href="https://www.yf.io/">Fisher Yu</a>
+  </p>
+  <h3 align="center"><a href="">[Paper]</a> | <a href="">[Supp]</a> | <a href="https://1drv.ms/f/s!AgjOZB4WHoLekVPr-wOvZU49ZDif?e=T207H7">[Visual Results]</a> | <a href="https://1drv.ms/f/s!AgjOZB4WHoLekVJIjZwm5EXdBGW2?e=XS359Y">[Models]</a> </h3>
+  <div align="center"></div>
+</p>
 
-arXiv 2024
-
-[Xiang Zhang](https://xiangz-0.github.io/), [Yulun Zhang](http://yulunzhang.com/), and [Fisher Yu](https://www.yf.io/)
-
-[[paper]()] [[supplementary material]()] [[visual results](https://1drv.ms/f/s!AgjOZB4WHoLekVPr-wOvZU49ZDif?e=T207H7)] [[pretrained models](https://1drv.ms/f/s!AgjOZB4WHoLekVJIjZwm5EXdBGW2?e=XS359Y)]
 
 
 ---
