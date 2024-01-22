@@ -32,7 +32,7 @@
 ## Environment Setup
 
 - Python 3.8
-- PyTorch 1.13.0 + Torchvision 0.14.0
+- PyTorch 1.8.0 + Torchvision 0.9.0
 - NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
 
 ```bash
