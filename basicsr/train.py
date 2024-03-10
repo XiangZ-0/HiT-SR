@@ -157,6 +157,8 @@ def train_pipeline(root_path):
         train_sampler.set_epoch(epoch)
         prefetcher.reset()
         train_data = prefetcher.next()
+        if current_iter > total_iters:
+            break
 
         while train_data is not None:
             data_timer.record()
