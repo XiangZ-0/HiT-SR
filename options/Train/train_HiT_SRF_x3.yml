@@ -1,18 +1,18 @@
 # general settings
-name: HiT_SIR_S_x3
+name: HiT_SRF_x3
 model_type: HITModel
 scale: 3
 num_gpu: auto
-manual_seed: 10
+manual_seed: 1226
 
 # dataset and data loader settings
 datasets:
   train:
     task: SR
-    name: DF2K
+    name: DIV2K
     type: PairedImageDataset
-    dataroot_gt: datasets/DF2K/HR
-    dataroot_lq: datasets/DF2K/LR_bicubic/X3
+    dataroot_gt: datasets/DIV2K/HR
+    dataroot_lq: datasets/DIV2K/LR_bicubic/X3
     filename_tmpl: '{}x3'
     io_backend:
       type: disk
@@ -23,8 +23,8 @@ datasets:
 
     # data loader
     use_shuffle: True
-    num_worker_per_gpu: 12
-    batch_size_per_gpu: 8
+    num_worker_per_gpu: 2
+    batch_size_per_gpu: 16
     dataset_enlarge_ratio: 1
     prefetch_mode: ~
 
@@ -40,14 +40,14 @@ datasets:
 
 # network structures
 network_g:
-  type: HiT_SIR
+  type: HiT_SRF
   upscale: 3
   in_chans: 3
   img_size: 64
   base_win_size: [8,8]
   img_range: 1.
   depths: [6,6,6,6]
-  embed_dim: 48
+  embed_dim: 60
   num_heads: [6,6,6,6]
   expansion_factor: 2
   resi_connection: '1conv'
@@ -56,7 +56,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: experiments/pretrained_models/HiT-SIR-S-2x.pth
+  pretrain_network_g: experiments/pretrained_models/HiT-SRF-2x.pth
   strict_load_g: False
   resume_state: ~
 
@@ -64,7 +64,7 @@ path:
 train:
   optim_g:
     type: Adam
-    lr: !!float 2e-4
+    lr: !!float 5e-4
     weight_decay: 0
     betas: [0.9, 0.99]
 
@@ -92,11 +92,16 @@ val:
       type: calculate_psnr
       crop_border: 3
       test_y_channel: True
+    
+    ssim: # metric name, can be arbitrary
+      type: calculate_ssim
+      crop_border: 3
+      test_y_channel: True
 
 # logging settings
 logger:
   print_freq: 200
-  save_checkpoint_freq: !!float 1e5
+  save_checkpoint_freq: !!float 5e3
   use_tb_logger: True
   wandb:
     project: ~

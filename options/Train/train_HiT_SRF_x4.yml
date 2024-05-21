@@ -1,30 +1,30 @@
 # general settings
-name: HiT_SIR_S_x2
+name: HiT_SRF_x4
 model_type: HITModel
-scale: 2
+scale: 4
 num_gpu: auto
-manual_seed: 10
+manual_seed: 1226
 
 # dataset and data loader settings
 datasets:
   train:
     task: SR
-    name: DF2K
+    name: DIV2K
     type: PairedImageDataset
-    dataroot_gt: datasets/DF2K/HR
-    dataroot_lq: datasets/DF2K/LR_bicubic/X2
-    filename_tmpl: '{}x2'
+    dataroot_gt: datasets/DIV2K/HR
+    dataroot_lq: datasets/DIV2K/LR_bicubic/X4
+    filename_tmpl: '{}x4'
     io_backend:
       type: disk
 
-    gt_size: 128
+    gt_size: 256
     use_hflip: True
     use_rot: True
 
     # data loader
     use_shuffle: True
-    num_worker_per_gpu: 12
-    batch_size_per_gpu: 8
+    num_worker_per_gpu: 2
+    batch_size_per_gpu: 16
     dataset_enlarge_ratio: 1
     prefetch_mode: ~
 
@@ -33,21 +33,21 @@ datasets:
     name: Set5
     type: PairedImageDataset
     dataroot_gt: datasets/benchmark/Set5/HR
-    dataroot_lq: datasets/benchmark/Set5/LR_bicubic/X2
-    filename_tmpl: '{}x2'
+    dataroot_lq: datasets/benchmark/Set5/LR_bicubic/X4
+    filename_tmpl: '{}x4'
     io_backend:
       type: disk
 
 # network structures
 network_g:
-  type: HiT_SIR
-  upscale: 2
+  type: HiT_SRF
+  upscale: 4
   in_chans: 3
   img_size: 64
   base_win_size: [8,8]
   img_range: 1.
   depths: [6,6,6,6]
-  embed_dim: 48
+  embed_dim: 60
   num_heads: [6,6,6,6]
   expansion_factor: 2
   resi_connection: '1conv'
@@ -56,15 +56,15 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: ~
-  strict_load_g: True
+  pretrain_network_g: experiments/pretrained_models/HiT-SRF-2x.pth
+  strict_load_g: False
   resume_state: ~
 
 # training settings
 train:
   optim_g:
     type: Adam
-    lr: !!float 2e-4
+    lr: !!float 5e-4
     weight_decay: 0
     betas: [0.9, 0.99]
 
@@ -90,13 +90,18 @@ val:
   metrics:
     psnr: # metric name, can be arbitrary
       type: calculate_psnr
-      crop_border: 2
+      crop_border: 4
+      test_y_channel: True
+    
+    ssim: # metric name, can be arbitrary
+      type: calculate_ssim
+      crop_border: 4
       test_y_channel: True
 
 # logging settings
 logger:
   print_freq: 200
-  save_checkpoint_freq: !!float 1e5
+  save_checkpoint_freq: !!float 5e3
   use_tb_logger: True
   wandb:
     project: ~

@@ -7,7 +7,7 @@
     ·
     <a href="https://www.yf.io/">Fisher Yu</a>
   </p>
-  <h3 align="center"><a href="">[Paper]</a> | <a href="">[Supp]</a> | <a href="https://1drv.ms/f/s!AgjOZB4WHoLekVPr-wOvZU49ZDif?e=T207H7">[Visual Results]</a> | <a href="https://1drv.ms/f/s!AgjOZB4WHoLekVJIjZwm5EXdBGW2?e=XS359Y">[Models]</a> </h3>
+  <h3 align="center"><a href="">[Paper]</a> | <a href="">[Supp]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ">[Visual Results]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EqakXUlsculBpo79VKpEXY4B_6OQL-fGyilrzpHaNObG1A?e=YNrqHb">[Models]</a> </h3>
   <div align="center"></div>
 </p>
 
@@ -15,8 +15,10 @@
 
 ---
 
-> **Abstract:** *Transformers have exhibited promising performance in computer vision tasks including image super-resolution (SR). However, transformer-based SR methods often employ window self-attention with quadratic computational complexity to window sizes, resulting in fixed small windows with limited receptive fields. In this paper, we present a general strategy to convert transformer-based SR networks to hierarchical transformers (HiT-SR), boosting SR performance with multi-scale features while maintaining an efficient design. Specifically, we first replace the commonly used fixed small windows with expanding hierarchical windows to aggregate features at different scales and establish long-range dependencies. Considering the intensive computation required for large windows, we further design a spatial-channel correlation method with linear complexity to window sizes, efficiently gathering spatial and channel information from hierarchical windows. Extensive experiments verify the effectiveness and efficiency of our HiT-SR, and our improved versions of SwinIR-Light and SwinIR-NG establish state-of-the-art results for efficient image SR.* 
+> **Abstract:** *Transformers have exhibited promising performance in computer vision tasks including image super-resolution (SR). However, popular transformer-based SR methods often employ window self-attention with quadratic computational complexity to window sizes, resulting in fixed small windows with limited receptive fields. In this paper, we present a general strategy to convert transformer-based SR networks to hierarchical transformers (HiT-SR), boosting SR performance with multi-scale features while maintaining an efficient design. Specifically, we first replace the commonly used fixed small windows with expanding hierarchical windows to aggregate features at different scales and establish long-range dependencies. Considering the intensive computation required for large windows, we further design a spatial-channel correlation method with linear complexity to window sizes, efficiently gathering spatial and channel information from hierarchical windows. Extensive experiments verify the effectiveness and efficiency of our HiT-SR, and our improved versions of SwinIR-Light, SwinIR-NG, and SRFormer-Light yield state-of-the-art SR results with fewer parameters, FLOPs, and faster speeds ($\sim7\times$).* 
 
+
+(TBD)
 
 <p align="center">
   <img width="600" src="figs/framework.png">
@@ -61,7 +63,7 @@ Training and testing sets can be downloaded as follows:
 
 | Training Set                                                 |                         Testing Set                          |                        Visual Results                        |
 | :-----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) (800 training images, 100 validation images) +  [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (2650 images) [complete training dataset DF2K: [Google Drive](https://drive.google.com/file/d/1TubDkirxl4qAWelfOnpwaSKoj3KLAIG4/view?usp=share_link) / [Baidu Disk](https://pan.baidu.com/s/1KIcPNz3qDsGSM0uDKl4DRw?pwd=74yc)] | Set5 + Set14 + BSD100 + Urban100 + Manga109 [complete testing dataset: [Google Drive](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) / [Baidu Disk](https://pan.baidu.com/s/1Tf8WT14vhlA49TO2lz3Y1Q?pwd=8xen)] | [One Drive](https://1drv.ms/f/s!AgjOZB4WHoLekVPr-wOvZU49ZDif?e=fnHUhz) |
+| [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) (800 training images, 100 validation images) [organized training dataset DIV2K: [One Drive](https://1drv.ms/u/c/de821e161e64ce08/Eb1dyRMuCJBGjmtUUJd1j2EBbDhcSyHBYqUeqKjhuPb49Q?e=3RMxbs)] | Set5 + Set14 + BSD100 + Urban100 + Manga109 [complete testing dataset: [One Drive](https://1drv.ms/u/c/de821e161e64ce08/EUN4kTCUdBtNuvJnb2Jy3BkByBMErLIqpiQI4NG6HcAXWQ?e=3k5dGK)] | [One Drive](https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=hV5OOc) |
 
 Download training and testing datasets and put them into the corresponding folders of `datasets/`. See [datasets](datasets/README.md) for the detail of the directory structure.
 
@@ -69,24 +71,19 @@ Download training and testing datasets and put them into the corresponding folde
 
 | Method    | #Param. (K) | FLOPs (G) | Dataset  | PSNR (dB) |  SSIM  |                          Model Zoo                           |                        Visual Results                        |
 | :-------- | :----: | :-------: | :------: | :-------: | :----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| HiT-SIR-S     | 495 |  137.4   | Urban100 (x2) |  39.32   | 0.9785 | [One Drive](https://1drv.ms/f/s!AgjOZB4WHoLekVciOEScWJ9yajc8?e=clWshj) | [One Drive](https://1drv.ms/u/s!AgjOZB4WHoLekVSH71Pxz0gIkmiz?e=AU0LsH) |
-| HiT-SIR       | 772 |  209.9   | Urban100 (x2) |   39.50   | 0.9788 | [One Drive](https://1drv.ms/f/s!AgjOZB4WHoLekViu2GbilwkRwYQG?e=MhzzPi)  | [One Drive](https://1drv.ms/u/s!AgjOZB4WHoLekVZ2Jqg5g9cO8Oot?e=hhNNvD)  |
-| HiT-SNG    | 1013 |  213.9   | Urban100 (x2) |   39.51   | 0.9789 | [One Drive](https://1drv.ms/f/s!AgjOZB4WHoLekVmvlzdkQOVBV_29?e=okydd1) | [One Drive](https://1drv.ms/u/s!AgjOZB4WHoLekVVLQaDMqWXJgqkJ?e=MwSggK) |
+| HiT-SIR       | 792 |  53.8   | Urban100 (x4) |   26.71   | 0.8045 | [One Drive](https://1drv.ms/f/c/de821e161e64ce08/EhLkXZsiGV9HgjwjQIvNV3oBTKmSaTZfZ0-jIMMJtONN3w?e=PSos9v)  | [One Drive](https://1drv.ms/u/c/de821e161e64ce08/Eeya10xIX-dJsGVa3WJt2hkBnTeG3CTJFuP9tLdwBHBndg?e=fb1aM4)  |
+| HiT-SNG    | 1032 |  57.7   | Urban100 (x4) |   26.75   | 0.8053 | [One Drive](https://1drv.ms/f/c/de821e161e64ce08/ElBD_V3wgy9KrotqdSoWyQoB2BhOUzcPxYkFQyQQp68jYA?e=Kz4LRw) | [One Drive](https://1drv.ms/u/c/de821e161e64ce08/Ee6a-XKo1qFKrTvgOiFlb4sBfNfyLBwHnMVj-vqfxO5YRA?e=pURhUB) |
+| HiT-SRF     | 866 |  58.0   | Urban100 (x4) |  26.80   | 0.8069 | [One Drive](https://1drv.ms/f/c/de821e161e64ce08/ErtsTu3cbxdFnVPFJAcofY4BkwfGq5c0pGewFIBNTkujrg?e=wLd1n1) | [One Drive](https://1drv.ms/u/c/de821e161e64ce08/ET9b9T7PdDdGr8T7EFdX8OkBzK3vBe1drGD-LAcyGYgr-g?e=aYGwOP) |
 
-The output size is set to 3x1280x720 to compute FLOPs. 
+The output size is set to 1280x720 to compute FLOPs. 
 
 ## Training
 
-- Download [training](https://drive.google.com/file/d/1TubDkirxl4qAWelfOnpwaSKoj3KLAIG4/view?usp=share_link) (DF2K, already processed) and [testing](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, Set14, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
+- Download [training](https://1drv.ms/u/c/de821e161e64ce08/Eb1dyRMuCJBGjmtUUJd1j2EBbDhcSyHBYqUeqKjhuPb49Q?e=3RMxbs) (DIV2K, already processed) and [testing](https://1drv.ms/u/c/de821e161e64ce08/EUN4kTCUdBtNuvJnb2Jy3BkByBMErLIqpiQI4NG6HcAXWQ?e=3k5dGK) (Set5, Set14, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
 
-- Run the following scripts. The training configuration is in `options/train/`.
+- Run the following scripts. The training configuration is in `options/Train/`.
 
   ```shell
-  # HiT-SIR-S, input=64x64, 4 GPUs
-  python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SIR_S_x2.yml --launcher pytorch
-  python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SIR_S_x3.yml --launcher pytorch
-  python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SIR_S_x4.yml --launcher pytorch
-  
   # HiT-SIR, input=64x64, 4 GPUs
   python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SIR_x2.yml --launcher pytorch
   python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SIR_x3.yml --launcher pytorch
@@ -96,6 +93,11 @@ The output size is set to 3x1280x720 to compute FLOPs.
   python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 basicsr/train.py -opt options/Train/train_HiT_SNG_x2.yml --launcher pytorch
   python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 basicsr/train.py -opt options/Train/train_HiT_SNG_x3.yml --launcher pytorch
   python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 basicsr/train.py -opt options/Train/train_HiT_SNG_x4.yml --launcher pytorch
+
+  # HiT-SRF, input=64x64, 4 GPUs
+  python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SRF_x2.yml --launcher pytorch
+  python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SRF_x3.yml --launcher pytorch
+  python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 basicsr/train.py -opt options/Train/train_HiT_SRF_x4.yml --launcher pytorch
   ```
 
 - The training experiments will be stored in `experiments/`.
@@ -104,11 +106,11 @@ The output size is set to 3x1280x720 to compute FLOPs.
 
 ### Test with ground-truth images
 
-- Download the [pre-trained models](https://1drv.ms/f/s!AgjOZB4WHoLekVJIjZwm5EXdBGW2?e=XS359Y) and place them in `experiments/pretrained_models/`.
+- Download the [pre-trained models](https://1drv.ms/f/c/de821e161e64ce08/EqakXUlsculBpo79VKpEXY4B_6OQL-fGyilrzpHaNObG1A?e=YNrqHb) and place them in `experiments/pretrained_models/`.
 
-  We provide pre-trained models for efficient image SR: HiT-SIR-S, HiT-SIR, and HiT-SNG (x2, x3, x4).
+  We provide pre-trained models for efficient image SR: HiT-SIR, HiT-SNG, and HiT-SRF (x2, x3, x4).
 
-- Download [testing datasets](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, Set14, BSD100, Urban100, Manga109), place them in `datasets/`.
+- Download [testing datasets](https://1drv.ms/u/c/de821e161e64ce08/EUN4kTCUdBtNuvJnb2Jy3BkByBMErLIqpiQI4NG6HcAXWQ?e=3k5dGK) (Set5, Set14, BSD100, Urban100, Manga109), place them in `datasets/`.
 
 - Run the following scripts. The testing configuration is in `options/Test/` (e.g., [test_HiT_SIR_x2.yml](options/Test/test_HiT_SIR_x2.yml)).
 
@@ -116,11 +118,6 @@ The output size is set to 3x1280x720 to compute FLOPs.
 
   ```shell
   # No self-ensemble
-  # HiT-SIR-S, reproduces results in Table 2 of the main paper
-  python basicsr/test.py -opt options/Test/test_HiT_SIR_S_x2.yml
-  python basicsr/test.py -opt options/Test/test_HiT_SIR_S_x3.yml
-  python basicsr/test.py -opt options/Test/test_HiT_SIR_S_x4.yml
-  
   # HiT-SIR, reproduces results in Table 2 of the main paper
   python basicsr/test.py -opt options/Test/test_HiT_SIR_x2.yml
   python basicsr/test.py -opt options/Test/test_HiT_SIR_x3.yml
@@ -130,21 +127,26 @@ The output size is set to 3x1280x720 to compute FLOPs.
   python basicsr/test.py -opt options/Test/test_HiT_SNG_x2.yml
   python basicsr/test.py -opt options/Test/test_HiT_SNG_x3.yml
   python basicsr/test.py -opt options/Test/test_HiT_SNG_x4.yml
+
+  # HiT-SRF, reproduces results in Table 2 of the main paper
+  python basicsr/test.py -opt options/Test/test_HiT_SRF_x2.yml
+  python basicsr/test.py -opt options/Test/test_HiT_SRF_x3.yml
+  python basicsr/test.py -opt options/Test/test_HiT_SRF_x4.yml
   ```
 
-- The output is stored in `results/`. All visual results of our pre-trained models can be accessed via [one drive](https://1drv.ms/f/s!AgjOZB4WHoLekVPr-wOvZU49ZDif?e=T207H7).
+- The output is stored in `results/`. All visual results of our pre-trained models can be accessed via [one drive](https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ).
 
 ### Test without ground-truth images
 
-- Download the [pre-trained models](https://1drv.ms/f/s!AgjOZB4WHoLekVJIjZwm5EXdBGW2?e=XS359Y) and place them in `experiments/pretrained_models/`.
+- Download the [pre-trained models](https://1drv.ms/f/c/de821e161e64ce08/EqakXUlsculBpo79VKpEXY4B_6OQL-fGyilrzpHaNObG1A?e=YNrqHb) and place them in `experiments/pretrained_models/`.
 
-  We provide pre-trained models for efficient image SR: HiT-SIR-S, HiT-SIR, and HiT-SNG (x2, x3, x4).
+  We provide pre-trained models for efficient image SR: HiT-SIR, HiT-SNG, and HiT-SRF (x2, x3, x4).
 
 - Put your dataset (single LR images) in `datasets/single`. Some example images are in this folder.
 
 - Run the following scripts. The testing configuration is in `options/test/` (e.g., [test_single_x2.yml](options/Test/test_single_x2.yml)).
 
-  Note 1: The default model is HiT-SIR. You can use other models like HiT-SNG by modifying the YML.
+  Note 1: The default model is HiT-SRF. You can use other models like HiT-SIR by modifying the YML.
 
   Note 2:  You can set `use_chop: True` (default: False) in YML to chop the image for testing.
 
@@ -158,6 +160,8 @@ The output size is set to 3x1280x720 to compute FLOPs.
 - The output is stored in `results/`.
 
 ## Results
+
+(TBD)
 
 We apply our HiT-SR approach to improve [SwinIR-Light](https://github.com/JingyunLiang/SwinIR) and [SwinIR-NG](https://github.com/rami0205/NGramSwin), corresponding to our HiT-SIR and HiT-SNG. We also reduce the channel dimension of HiT-SIR and provide a lighter model HiT-SIR-S. Compared with the original structure, our improved models achieve better SR performance while reducing computational burdens.
 

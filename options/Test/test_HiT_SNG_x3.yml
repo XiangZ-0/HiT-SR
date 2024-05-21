@@ -3,7 +3,7 @@ name: HiT_SNG_x3
 model_type: HITModel
 scale: 3
 num_gpu: 1
-manual_seed: 10
+manual_seed: 1226
 
 datasets:
   test_1:  # the 1st test dataset

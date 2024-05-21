@@ -3,7 +3,7 @@ name: test_single_x2
 model_type: HITModel
 scale: 2
 num_gpu: 1
-manual_seed: 10
+manual_seed: 1226
 
 datasets:
   test_1:  # the 1st test dataset
@@ -16,7 +16,7 @@ datasets:
 
 # network structures
 network_g:
-  type: HiT_SIR
+  type: HiT_SRF
   upscale: 2
   in_chans: 3
   img_size: 64
@@ -32,7 +32,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: experiments/pretrained_models/HiT-SIR-2x.pth
+  pretrain_network_g: experiments/pretrained_models/HiT-SRF-2x.pth
   strict_load_g: True
 
 # validation settings

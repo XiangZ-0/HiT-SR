@@ -6,7 +6,7 @@ For training and testing, the directory structure is as follows:
     |-- single
 
     # train
-    |-- DF2K
+    |-- DIV2K
         |-- HR
         |-- LR_bicubic
             |-- X2
