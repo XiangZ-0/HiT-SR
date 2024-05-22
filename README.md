@@ -19,7 +19,7 @@
 
 
 <p align="center">
-  <img width="550" src="figs/framework.png">
+  <img width="650" src="figs/framework.png">
 </p>
 
 <p align="center">
