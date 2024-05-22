@@ -15,7 +15,7 @@
 
 ---
 
-> **Abstract:** *Transformers have exhibited promising performance in computer vision tasks including image super-resolution (SR). However, popular transformer-based SR methods often employ window self-attention with quadratic computational complexity to window sizes, resulting in fixed small windows with limited receptive fields. In this paper, we present a general strategy to convert transformer-based SR networks to hierarchical transformers (HiT-SR), boosting SR performance with multi-scale features while maintaining an efficient design. Specifically, we first replace the commonly used fixed small windows with expanding hierarchical windows to aggregate features at different scales and establish long-range dependencies. Considering the intensive computation required for large windows, we further design a spatial-channel correlation method with linear complexity to window sizes, efficiently gathering spatial and channel information from hierarchical windows. Extensive experiments verify the effectiveness and efficiency of our HiT-SR, and our improved versions of SwinIR-Light, SwinIR-NG, and SRFormer-Light yield state-of-the-art SR results with fewer parameters, FLOPs, and faster speeds ($\sim7\times$).* 
+> **Abstract:** *Transformers have exhibited promising performance in computer vision tasks including image super-resolution (SR). However, popular transformer-based SR methods often employ window self-attention with quadratic computational complexity to window sizes, resulting in fixed small windows with limited receptive fields. In this paper, we present a general strategy to convert transformer-based SR networks to hierarchical transformers (HiT-SR), boosting SR performance with multi-scale features while maintaining an efficient design. Specifically, we first replace the commonly used fixed small windows with expanding hierarchical windows to aggregate features at different scales and establish long-range dependencies. Considering the intensive computation required for large windows, we further design a spatial-channel correlation method with linear complexity to window sizes, efficiently gathering spatial and channel information from hierarchical windows. Extensive experiments verify the effectiveness and efficiency of our HiT-SR, and our improved versions of SwinIR-Light, SwinIR-NG, and SRFormer-Light yield state-of-the-art SR results with fewer parameters, FLOPs, and faster speeds (~7x).* 
 
 
 (TBD)
@@ -161,21 +161,26 @@ The output size is set to 1280x720 to compute FLOPs.
 
 ## Results
 
-(TBD)
 
-We apply our HiT-SR approach to improve [SwinIR-Light](https://github.com/JingyunLiang/SwinIR) and [SwinIR-NG](https://github.com/rami0205/NGramSwin), corresponding to our HiT-SIR and HiT-SNG. We also reduce the channel dimension of HiT-SIR and provide a lighter model HiT-SIR-S. Compared with the original structure, our improved models achieve better SR performance while reducing computational burdens.
+We apply our HiT-SR approach to improve [SwinIR-Light](https://github.com/JingyunLiang/SwinIR), [SwinIR-NG](https://github.com/rami0205/NGramSwin) and [SRFormer-Light](https://github.com/HVision-NKU/SRFormer), corresponding to our HiT-SIR, HiT-SNG, and HiT-SRF. Compared with the original structure, our improved models achieve better SR performance while reducing computational burdens.
 
-- Performance improvements of HiT-SR (SIR and SNG indicate SwinIR-Light and SwinIR-NG, respectively).
+- Performance improvements of HiT-SR (SIR, SNG, and SRF indicate SwinIR-Light, SwinIR-NG, and SRFormer-Light, respectively).
 <p align="center">
   <img width="750" src="figs/performance-comparison.png">
 </p>
 
-- Efficiency improvements of HiT-SR (SIR and SNG indicate SwinIR-Light and SwinIR-NG, respectively). The complexity metrics are calculated under x2 upscaling on an A100 GPU, with the output size set to 3x1280x720.
+- Efficiency improvements of HiT-SR (SIR, SNG, and SRF indicate SwinIR-Light, SwinIR-NG, and SRFormer-Light, respectively). The complexity metrics are calculated under x2 upscaling on an A100 GPU, with the output size set to 1280x720.
 <p align="center">
   <img width="750" src="figs/efficiency-comparison.png">
 </p>
 
-- Convergence improvements of HiT-SR (SIR and SNG indicate SwinIR-Light and SwinIR-NG, respectively). Left two figures show the results on Urban100 (x2) dataset, and the right two are on Manga109 (x2) dataset.
+
+- Overall improvements of HiT-SR
+<p align="center">
+  <img width="750" src="figs/overall_improvements.png">
+</p>
+
+- Convergence improvements of HiT-SR
 
 <p align="center">
   <img width="750" src="figs/convergence-comparison.png">
