@@ -18,10 +18,8 @@
 > **Abstract:** *Transformers have exhibited promising performance in computer vision tasks including image super-resolution (SR). However, popular transformer-based SR methods often employ window self-attention with quadratic computational complexity to window sizes, resulting in fixed small windows with limited receptive fields. In this paper, we present a general strategy to convert transformer-based SR networks to hierarchical transformers (HiT-SR), boosting SR performance with multi-scale features while maintaining an efficient design. Specifically, we first replace the commonly used fixed small windows with expanding hierarchical windows to aggregate features at different scales and establish long-range dependencies. Considering the intensive computation required for large windows, we further design a spatial-channel correlation method with linear complexity to window sizes, efficiently gathering spatial and channel information from hierarchical windows. Extensive experiments verify the effectiveness and efficiency of our HiT-SR, and our improved versions of SwinIR-Light, SwinIR-NG, and SRFormer-Light yield state-of-the-art SR results with fewer parameters, FLOPs, and faster speeds (~7x).* 
 
 
-(TBD)
-
 <p align="center">
-  <img width="600" src="figs/framework.png">
+  <img width="550" src="figs/framework.png">
 </p>
 
 <p align="center">
@@ -186,7 +184,7 @@ We apply our HiT-SR approach to improve [SwinIR-Light](https://github.com/Jingyu
   <img width="750" src="figs/convergence-comparison.png">
 </p>
 
-More detailed results can be found in the paper. All visual results of  can be downloaded [here](https://1drv.ms/f/s!AgjOZB4WHoLekVPr-wOvZU49ZDif?e=T207H7).
+More detailed results can be found in the paper. All visual results of  can be downloaded [here](https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ).
 
 <details>
 <summary>Click to expan</summary>
