@@ -1,12 +1,18 @@
 <p align="center">
   <h1 align="center">HiT-SR: Hierarchical Transformer <br>  for Efficient Image Super-Resolution</h1>
   <p align="center">
-    <a href="https://xiangz-0.github.io/">Xiang Zhang</a>
+    <a href="https://xiangz-0.github.io/">Xiang Zhang</a><sup>1</sup>
     ·
-    <a href="http://yulunzhang.com/">Yulun Zhang</a>
+    <a href="http://yulunzhang.com/">Yulun Zhang</a><sup>2</sup>
     ·
-    <a href="https://www.yf.io/">Fisher Yu</a>
+    <a href="https://www.yf.io/">Fisher Yu</a><sup>1</sup>
   </p>
+  <p align="center">
+    <sup>1</sup>ETH Zürich &nbsp; &nbsp;   <sup>2</sup>Shanghai Jiao Tong University
+  </p>
+  <h3 align="center">
+  ECCV 2024
+  </h3>
   <h3 align="center"><a href="">[Paper]</a> | <a href="">[Supp]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ">[Visual Results]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EqakXUlsculBpo79VKpEXY4B_6OQL-fGyilrzpHaNObG1A?e=YNrqHb">[Models]</a> </h3>
   <div align="center"></div>
 </p>
@@ -18,9 +24,9 @@
 > **Abstract:** *Transformers have exhibited promising performance in computer vision tasks including image super-resolution (SR). However, popular transformer-based SR methods often employ window self-attention with quadratic computational complexity to window sizes, resulting in fixed small windows with limited receptive fields. In this paper, we present a general strategy to convert transformer-based SR networks to hierarchical transformers (HiT-SR), boosting SR performance with multi-scale features while maintaining an efficient design. Specifically, we first replace the commonly used fixed small windows with expanding hierarchical windows to aggregate features at different scales and establish long-range dependencies. Considering the intensive computation required for large windows, we further design a spatial-channel correlation method with linear complexity to window sizes, efficiently gathering spatial and channel information from hierarchical windows. Extensive experiments verify the effectiveness and efficiency of our HiT-SR, and our improved versions of SwinIR-Light, SwinIR-NG, and SRFormer-Light yield state-of-the-art SR results with fewer parameters, FLOPs, and faster speeds (~7x).* 
 
 
-<p align="center">
+<!-- <p align="center">
   <img width="650" src="figs/framework.png">
-</p>
+</p> -->
 
 <p align="center">
   <img width="900" src="figs/HiT-SR.png">
@@ -29,7 +35,7 @@
 
 <!-- ![](figs/HiT-SR.png) -->
 
-## Environment Setup
+## 🛠️ Environment Setup
 
 - Python 3.8
 - PyTorch 1.8.0 + Torchvision 0.9.0
@@ -43,7 +49,7 @@ pip install -r requirements.txt
 python setup.py develop
 ```
 
-## Contents
+## 📑 Contents
 
 1. [Datasets](#Datasets)
 1. [Models](#Models)
@@ -55,7 +61,7 @@ python setup.py develop
 
 ---
 
-## Datasets
+## 💿 Datasets
 
 Training and testing sets can be downloaded as follows:
 
@@ -65,7 +71,7 @@ Training and testing sets can be downloaded as follows:
 
 Download training and testing datasets and put them into the corresponding folders of `datasets/`. See [datasets](datasets/README.md) for the detail of the directory structure.
 
-## Models
+## 🚀 Models
 
 | Method    | #Param. (K) | FLOPs (G) | Dataset  | PSNR (dB) |  SSIM  |                          Model Zoo                           |                        Visual Results                        |
 | :-------- | :----: | :-------: | :------: | :-------: | :----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -75,7 +81,7 @@ Download training and testing datasets and put them into the corresponding folde
 
 The output size is set to 1280x720 to compute FLOPs. 
 
-## Training
+## 🏋 Training
 
 - Download [training](https://1drv.ms/u/c/de821e161e64ce08/Eb1dyRMuCJBGjmtUUJd1j2EBbDhcSyHBYqUeqKjhuPb49Q?e=3RMxbs) (DIV2K, already processed) and [testing](https://1drv.ms/u/c/de821e161e64ce08/EUN4kTCUdBtNuvJnb2Jy3BkByBMErLIqpiQI4NG6HcAXWQ?e=3k5dGK) (Set5, Set14, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
 
@@ -100,7 +106,7 @@ The output size is set to 1280x720 to compute FLOPs.
 
 - The training experiments will be stored in `experiments/`.
 
-## Testing
+## 🧪 Testing
 
 ### Test with ground-truth images
 
@@ -157,7 +163,7 @@ The output size is set to 1280x720 to compute FLOPs.
 
 - The output is stored in `results/`.
 
-## Results
+## 📊 Results
 
 
 We apply our HiT-SR approach to improve [SwinIR-Light](https://github.com/JingyunLiang/SwinIR), [SwinIR-NG](https://github.com/rami0205/NGramSwin) and [SRFormer-Light](https://github.com/HVision-NKU/SRFormer), corresponding to our HiT-SIR, HiT-SNG, and HiT-SRF. Compared with the original structure, our improved models achieve better SR performance while reducing computational burdens.
@@ -219,7 +225,7 @@ More detailed results can be found in the paper. All visual results of  can be d
 
 </details>
 
-## Citation
+## 📎 Citation
 
 If you find the code helpful in your research or work, please consider citing the following paper.
 
@@ -227,11 +233,11 @@ If you find the code helpful in your research or work, please consider citing th
 @inproceedings{zhang2024hitsr,
     title={HiT-SR: Hierarchical Transformer for Efficient Image Super-Resolution},
     author={Zhang, Xiang and Zhang, Yulun and Yu, Fisher},
-    booktitle={arXiv},
+    booktitle={ECCV 2024},
     year={2024}
 }
 ```
 
-## Acknowledgements
+## 🏅 Acknowledgements
 
-This code is built on [DAT](https://github.com/zhengchen1999/DAT), [SwinIR](https://github.com/JingyunLiang/SwinIR), and [BasicSR](https://github.com/XPixelGroup/BasicSR).
+This project is built on [DAT](https://github.com/zhengchen1999/DAT), [SwinIR](https://github.com/JingyunLiang/SwinIR), and [BasicSR](https://github.com/XPixelGroup/BasicSR). Special thanks to their excellent works.
