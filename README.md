@@ -38,7 +38,7 @@
 
 ## 📑 Contents
 
-1. [Setup](#-🛠️-Setup)
+1. [Setup](#exp-Setup)
 1. [Datasets](#Datasets)
 1. [Models](#Models)
 1. [Training](#Training)
@@ -49,8 +49,8 @@
 
 ---
 
-## 🛠️ Setup
-
+## exp Setup
+🛠️
 - Python 3.8
 - PyTorch 1.8.0 + Torchvision 0.9.0
 - NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
