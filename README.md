@@ -38,7 +38,7 @@
 
 ## 📑 Contents
 
-1. [🛠️ Setup](#-Setup)
+1. [🛠️ Setup](#%EF%B8%8F-Setup)
 1. [💿 Datasets](#-Datasets)
 1. [🚀 Models](#-Models)
 1. [🏋Training](#-Training)
