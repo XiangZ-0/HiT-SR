@@ -242,4 +242,4 @@ If you find the code helpful in your research or work, please consider citing th
 
 ## 🏅 Acknowledgements
 
-This project is built on [DAT](https://github.com/zhengchen1999/DAT), [SwinIR](https://github.com/JingyunLiang/SwinIR), and [BasicSR](https://github.com/XPixelGroup/BasicSR). Special thanks to their excellent works!
+This project is built on [DAT](https://github.com/zhengchen1999/DAT), [SwinIR](https://github.com/JingyunLiang/SwinIR), [NGramSwin](https://github.com/rami0205/NGramSwin), [SRFormer](https://github.com/HVision-NKU/SRFormer), and [BasicSR](https://github.com/XPixelGroup/BasicSR). Special thanks to their excellent works!
