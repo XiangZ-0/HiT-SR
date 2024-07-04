@@ -38,7 +38,7 @@
 
 ## 📑 Contents
 
-1. [Environment Setup](#Setup)
+1. [Setup](#-Setup)
 1. [Datasets](#Datasets)
 1. [Models](#Models)
 1. [Training](#Training)
@@ -49,7 +49,7 @@
 
 ---
 
-## Setup
+## 🛠️ Setup
 
 - Python 3.8
 - PyTorch 1.8.0 + Torchvision 0.9.0
