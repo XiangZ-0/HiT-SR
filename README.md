@@ -39,7 +39,7 @@
 ## 📑 Contents
 
 1. [Setup](#%EF%B8%8F-Setup)
-1. [Datasets](#💿-Datasets)
+1. [💿 Datasets](#-Datasets)
 1. [Models](#%9F%9A%80-Models)
 1. [Training](#%9F%8F%8B-Training)
 1. [Testing](#%9F%A7%AA-Testing)
