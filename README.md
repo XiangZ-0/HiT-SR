@@ -35,7 +35,21 @@
 
 <!-- ![](figs/HiT-SR.png) -->
 
-## 🛠️ Environment Setup
+
+## 📑 Contents
+
+1. [Environment Setup](#Setup)
+1. [Datasets](#Datasets)
+1. [Models](#Models)
+1. [Training](#Training)
+1. [Testing](#Testing)
+1. [Results](#Results)
+1. [Citation](#Citation)
+1. [Acknowledgements](#Acknowledgements)
+
+---
+
+## Setup
 
 - Python 3.8
 - PyTorch 1.8.0 + Torchvision 0.9.0
@@ -48,18 +62,6 @@ conda activate HiTSR
 pip install -r requirements.txt
 python setup.py develop
 ```
-
-## 📑 Contents
-
-1. [Datasets](#Datasets)
-1. [Models](#Models)
-1. [Training](#Training)
-1. [Testing](#Testing)
-1. [Results](#Results)
-1. [Citation](#Citation)
-1. [Acknowledgements](#Acknowledgements)
-
----
 
 ## 💿 Datasets
 
