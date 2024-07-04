@@ -39,13 +39,13 @@
 ## 📑 Contents
 
 1. [Setup](#%EF%B8%8F-Setup)
-1. [Datasets](#Datasets)
-1. [Models](#Models)
-1. [Training](#Training)
-1. [Testing](#Testing)
-1. [Results](#Results)
-1. [Citation](#Citation)
-1. [Acknowledgements](#Acknowledgements)
+1. [Datasets](#💿-Datasets)
+1. [Models](#🚀-Models)
+1. [Training](#🏋-Training)
+1. [Testing](#🧪-Testing)
+1. [Results](#📊-Results)
+1. [Citation](#📎-Citation)
+1. [Acknowledgements](#🏅-Acknowledgements)
 
 ---
 
