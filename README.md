@@ -42,10 +42,10 @@
 1. [💿 Datasets](#-Datasets)
 1. [🚀 Models](#-Models)
 1. [🏋Training](#-Training)
-1. [Testing](#%9F%A7%AA-Testing)
-1. [Results](#%9F%93%8A-Results)
-1. [Citation](#%9F%93%8E-Citation)
-1. [Acknowledgements](#%9F%8F%85-Acknowledgements)
+1. [🧪Testing](#-Testing)
+1. [📊Results](#-Results)
+1. [📎Citation](#-Citation)
+1. [🏅Acknowledgements](#-Acknowledgements)
 
 ---
 
