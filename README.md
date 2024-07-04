@@ -39,13 +39,13 @@
 ## 📑 Contents
 
 1. [Setup](#%EF%B8%8F-Setup)
-1. [Datasets](#💿-Datasets)
-1. [Models](#🚀-Models)
-1. [Training](#🏋-Training)
-1. [Testing](#🧪-Testing)
-1. [Results](#📊-Results)
-1. [Citation](#📎-Citation)
-1. [Acknowledgements](#🏅-Acknowledgements)
+1. [Datasets](#%F0%9F%92%BF-Datasets)
+1. [Models](#%F0%9F%9A%80-Models)
+1. [Training](#%F0%9F%8F%8B-Training)
+1. [Testing](#%F0%9F%A7%AA-Testing)
+1. [Results](#%F0%9F%93%8A-Results)
+1. [Citation](#%F0%9F%93%8E-Citation)
+1. [Acknowledgements](#%F0%9F%8F%85-Acknowledgements)
 
 ---
 
@@ -242,4 +242,4 @@ If you find the code helpful in your research or work, please consider citing th
 
 ## 🏅 Acknowledgements
 
-This project is built on [DAT](https://github.com/zhengchen1999/DAT), [SwinIR](https://github.com/JingyunLiang/SwinIR), and [BasicSR](https://github.com/XPixelGroup/BasicSR). Special thanks to their excellent works.
+This project is built on [DAT](https://github.com/zhengchen1999/DAT), [SwinIR](https://github.com/JingyunLiang/SwinIR), and [BasicSR](https://github.com/XPixelGroup/BasicSR). Special thanks to their excellent works!
