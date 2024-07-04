@@ -39,13 +39,13 @@
 ## 📑 Contents
 
 1. [Setup](#%EF%B8%8F-Setup)
-1. [Datasets](#%F0%9F%92%BF-Datasets)
-1. [Models](#%F0%9F%9A%80-Models)
-1. [Training](#%F0%9F%8F%8B-Training)
-1. [Testing](#%F0%9F%A7%AA-Testing)
-1. [Results](#%F0%9F%93%8A-Results)
-1. [Citation](#%F0%9F%93%8E-Citation)
-1. [Acknowledgements](#%F0%9F%8F%85-Acknowledgements)
+1. [Datasets](#%9F%92%BF-Datasets)
+1. [Models](#%9F%9A%80-Models)
+1. [Training](#%9F%8F%8B-Training)
+1. [Testing](#%9F%A7%AA-Testing)
+1. [Results](#%9F%93%8A-Results)
+1. [Citation](#%9F%93%8E-Citation)
+1. [Acknowledgements](#%9F%8F%85-Acknowledgements)
 
 ---
 
