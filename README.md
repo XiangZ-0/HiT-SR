@@ -235,7 +235,7 @@ If you find the code helpful in your research or work, please consider citing th
 @inproceedings{zhang2024hitsr,
     title={HiT-SR: Hierarchical Transformer for Efficient Image Super-Resolution},
     author={Zhang, Xiang and Zhang, Yulun and Yu, Fisher},
-    booktitle={ECCV 2024},
+    booktitle={ECCV},
     year={2024}
 }
 ```
