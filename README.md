@@ -8,7 +8,7 @@
     <a href="https://www.yf.io/">Fisher Yu</a><sup>1</sup>
   </p>
   <p align="center">
-    <sup>1</sup>ETH Zürich &nbsp; &nbsp;   <sup>2</sup>Shanghai Jiao Tong University
+    <sup>1</sup>ETH Zürich &nbsp; &nbsp;   <sup>2</sup>MoE Key Lab of Artificial Intelligence, Shanghai Jiao Tong University
   </p>
   <h3 align="center">
   ECCV 2024
@@ -195,7 +195,7 @@ We apply our HiT-SR approach to improve [SwinIR-Light](https://github.com/Jingyu
 More detailed results can be found in the paper. All visual results of  can be downloaded [here](https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ).
 
 <details>
-<summary>Click to expan</summary>
+<summary>More results (click to expan)</summary>
 
 - Quantitative comparison
 
