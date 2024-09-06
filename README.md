@@ -1,5 +1,7 @@
 <p align="center">
-  <h1 align="center">HiT-SR: Hierarchical Transformer <br>  for Efficient Image Super-Resolution</h1>
+  <h1 align="center">
+<img width="200" src="figs/logo.png"> <br>
+ Hierarchical Transformer <br>  for Efficient Image Super-Resolution</h1>
   <p align="center">
     <a href="https://xiangz-0.github.io/">Xiang Zhang</a><sup>1</sup>
     ·
