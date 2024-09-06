@@ -1,13 +1,5 @@
 .DS_Store
 
-# ignored folders
-datasets/*
-experiments/*
-results/*
-tb_logger/*
-wandb/*
-tmp/*
-visual/*
 
 docs/api
 scripts/__init__.py
@@ -17,15 +9,6 @@ scripts/__init__.py
 
 # ignored files
 version.py
-
-# ignored files with suffix
-*.html
-*.png
-*.jpeg
-*.jpg
-*.gif
-*.pth
-*.zip
 
 # template
 
