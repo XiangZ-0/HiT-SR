@@ -15,7 +15,7 @@
   <h3 align="center">
   ECCV 2024 - Oral
   </h3>
-  <h3 align="center"><a href="https://1drv.ms/b/c/de821e161e64ce08/EVsrOr1-PFFMsXxiRHEmKeoBSH6DPkTuN2GRmEYsl9bvDQ?e=f9wGUO">[Paper]</a> | <a href="https://1drv.ms/b/c/de821e161e64ce08/EYmRy-QOjPdFsMRT_ElKQqABYzoIIfDtkt9hofZ5YY_GjQ?e=2Iapqf">[Supp]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ">[Visual Results]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EqakXUlsculBpo79VKpEXY4B_6OQL-fGyilrzpHaNObG1A?e=YNrqHb">[Models]</a> </h3>
+  <h3 align="center"><a href="https://1drv.ms/b/c/de821e161e64ce08/EVsrOr1-PFFMsXxiRHEmKeoBSH6DPkTuN2GRmEYsl9bvDQ?e=f9wGUO">[Paper]</a> | <a href="https://1drv.ms/b/c/de821e161e64ce08/EYmRy-QOjPdFsMRT_ElKQqABYzoIIfDtkt9hofZ5YY_GjQ?e=2Iapqf">[Supp]</a> | <a href="https://www.youtube.com/watch?v=9rO0pjmmjZg">[Video]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ">[Visual Results]</a> | <a href="https://1drv.ms/f/c/de821e161e64ce08/EqakXUlsculBpo79VKpEXY4B_6OQL-fGyilrzpHaNObG1A?e=YNrqHb">[Models]</a> </h3>
   <div align="center"></div>
 </p>
 
