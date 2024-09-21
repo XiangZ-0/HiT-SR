@@ -7,6 +7,7 @@ from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 
 import numpy as np
 from basicsr.utils.registry import ARCH_REGISTRY
+from huggingface_hub import PyTorchModelHubMixin
 
 class DFE(nn.Module):
     """ Dual Feature Extraction 
@@ -690,7 +691,7 @@ class UpsampleOneStep(nn.Sequential):
 
 
 @ARCH_REGISTRY.register()
-class HiT_SRF(nn.Module):
+class HiT_SRF(nn.Module, PyTorchModelHubMixin):
     """ HiT-SRF network.
 
     Args:

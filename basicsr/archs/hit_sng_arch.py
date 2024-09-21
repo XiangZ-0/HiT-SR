@@ -10,6 +10,7 @@ from timm.models.fx_features import register_notrace_function
 import numpy as np
 from einops import rearrange
 from basicsr.utils.registry import ARCH_REGISTRY
+from huggingface_hub import PyTorchModelHubMixin
 
 class DFE(nn.Module):
     """ Dual Feature Extraction 
@@ -876,7 +877,7 @@ class UpsampleOneStep(nn.Sequential):
 
 
 @ARCH_REGISTRY.register()
-class HiT_SNG(nn.Module):
+class HiT_SNG(nn.Module, PyTorchModelHubMixin):
     """ HiT-SNG network.
 
     Args:
