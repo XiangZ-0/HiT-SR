@@ -53,7 +53,7 @@
 
 ## 🔥 News
 
-- 2024-09: 🤗HiT-SR is available at [🤗Hugging Face]("https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=aIRfCQ). Thank [Niels](https://github.com/NielsRogge)!
+- 2024-09: 🤗HiT-SR is available at [🤗Hugging Face](https://huggingface.co/XiangZ/hit-sr). Thank [Niels](https://github.com/NielsRogge)!
 - 2024-08: 🧑‍💻HiT-SRF is available at [neosr](https://github.com/muslll/neosr). Thank [muslll](https://github.com/muslll)!
 - 2024-07: 🎉HiT-SR is accepted by ECCV 2024! This repo is released.
 
