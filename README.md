@@ -81,9 +81,9 @@ Training and testing sets can be downloaded as follows:
 | :-----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) (800 training images, 100 validation images) [organized training dataset DIV2K: [One Drive](https://1drv.ms/u/c/de821e161e64ce08/Eb1dyRMuCJBGjmtUUJd1j2EBbDhcSyHBYqUeqKjhuPb49Q?e=3RMxbs)] | Set5 + Set14 + BSD100 + Urban100 + Manga109 [complete testing dataset: [One Drive](https://1drv.ms/u/c/de821e161e64ce08/EUN4kTCUdBtNuvJnb2Jy3BkByBMErLIqpiQI4NG6HcAXWQ?e=3k5dGK)] | [One Drive](https://1drv.ms/f/c/de821e161e64ce08/EuE6xW-sN-hFgkIa6J-Y8gkB9b4vDQZQ01r1ZP1lmzM0vQ?e=hV5OOc) |
 
-A larger training dataset DF2K ([DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) + [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)) can also be used for better performance [organized DF2K: [One Drive](https://1drv.ms/u/c/de821e161e64ce08/EfSn064NEU5AjF1BjfdqxVgBnfj28TK2Bfceg6oD0T8Imw?e=re2BPH)]
+A larger training dataset DF2K ([DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) + [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)) can also be used for better performance [DF2K: [One Drive](https://1drv.ms/u/c/de821e161e64ce08/EfSn064NEU5AjF1BjfdqxVgBnfj28TK2Bfceg6oD0T8Imw?e=re2BPH)]
 
-Download training and testing datasets and put them into the corresponding folders of `datasets/`. See [datasets](datasets/README.md) for the detail of the directory structure.
+Please download training and testing datasets and put them into the corresponding folders of `datasets/`. See [datasets](datasets/README.md) for the detail of the directory structure.
 
 ## 🚀 Models
 
