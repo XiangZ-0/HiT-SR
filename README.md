@@ -94,7 +94,7 @@ Download training and testing datasets and put them into the corresponding folde
 | HiT-SRF     | 866 |  58.0   | Urban100 (x4) |  26.80   | 0.8069 | [One Drive](https://1drv.ms/f/c/de821e161e64ce08/ErtsTu3cbxdFnVPFJAcofY4BkwfGq5c0pGewFIBNTkujrg?e=wLd1n1) | [One Drive](https://1drv.ms/u/c/de821e161e64ce08/ET9b9T7PdDdGr8T7EFdX8OkBzK3vBe1drGD-LAcyGYgr-g?e=aYGwOP) |
 | HiT-SRF-DF2K     | 866 |  58.0   | Urban100 (x4) |  27.00   | 0.8119 | [One Drive](https://1drv.ms/f/c/de821e161e64ce08/El8rHwr9naRMmAptyq4k02oB2wqKGodgaIDQ38heMQvATA?e=8pa6Gg) | [One Drive](https://1drv.ms/u/c/de821e161e64ce08/EaGJK29f5QBMi8msg3Vl5xkB_CUbzRlHGI1cxRj3jIi2qQ?e=9p3GUn) |
 
-The output size is set to 1280x720 to compute FLOPs. The detailed performance of HiT-SRF-DF2K is as follows (PSNR/SSIM):
+The output size is set to 1280x720 to compute FLOPs. The performance of HiT-SRF-DF2K is (PSNR/SSIM):
 | Method | Scale | Set5 | Set14 | B100 | Urban100 | Manga109 |
 |---|---|---|---|---|---|---|
 | HiT-SRF-DF2K | x2 | 38.30/0.9615 | 34.06/0.9217 | 32.41/0.9027 | 33.30/0.9387 | 39.67/0.9793 |
@@ -103,7 +103,7 @@ The output size is set to 1280x720 to compute FLOPs. The detailed performance of
 
 ## 🏋 Training
 
-- Download training ([DIV2K]((https://1drv.ms/u/c/de821e161e64ce08/Eb1dyRMuCJBGjmtUUJd1j2EBbDhcSyHBYqUeqKjhuPb49Q?e=3RMxbs)) or [DF2K](https://1drv.ms/u/c/de821e161e64ce08/EfSn064NEU5AjF1BjfdqxVgBnfj28TK2Bfceg6oD0T8Imw?e=re2BPH), already processed) and [testing](https://1drv.ms/u/c/de821e161e64ce08/EUN4kTCUdBtNuvJnb2Jy3BkByBMErLIqpiQI4NG6HcAXWQ?e=3k5dGK) (Set5, Set14, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
+- Download training ([DIV2K](https://1drv.ms/u/c/de821e161e64ce08/Eb1dyRMuCJBGjmtUUJd1j2EBbDhcSyHBYqUeqKjhuPb49Q?e=3RMxbs) or [DF2K](https://1drv.ms/u/c/de821e161e64ce08/EfSn064NEU5AjF1BjfdqxVgBnfj28TK2Bfceg6oD0T8Imw?e=re2BPH), already processed) and [testing](https://1drv.ms/u/c/de821e161e64ce08/EUN4kTCUdBtNuvJnb2Jy3BkByBMErLIqpiQI4NG6HcAXWQ?e=3k5dGK) (Set5, Set14, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
 
 - Run the following scripts. The training configuration is in `options/Train/`.
 
